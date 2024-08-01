@@ -1,4 +1,3 @@
-// src/pages/LoanParamsForm.tsx
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import {Container, Box, Button, FormControl, FormLabel, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Text, useToast } from '@chakra-ui/react';

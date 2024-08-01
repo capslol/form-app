@@ -1,5 +1,4 @@
-// src/pages/PersonalInfoForm.tsx
-import React, {ReactNode} from 'react';
+import React from 'react';
 import {useForm} from 'react-hook-form';
 import {Box, Button, FormControl, FormLabel, Input, Select, useToast, Container} from '@chakra-ui/react';
 import {useNavigate} from 'react-router-dom';
@@ -33,7 +32,6 @@ const PersonalInfoForm: React.FC = () => {
                         <FormLabel>Телефон</FormLabel>
                         <Input as={InputMask}
                                mask="0\999 999 999"
-                               maskChar={null}
                                {...register('phone', {required: true})}
                                defaultValue={userData.phone}
                                onChange={(e) => setValue('phone', e.target.value)}
