@@ -17,7 +17,6 @@ const AddressWorkForm: React.FC = () => {
     const [workplaces, setWorkplaces] = useState<string[]>([]);
 
     useEffect(() => {
-        // Fetching workplace categories
         fetch('https://dummyjson.com/products/category-list')
             .then(res => res.json())
             .then(data => setWorkplaces(data))
